@@ -1,0 +1,40 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.toolbar {
+    padding: 10px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    justify-content: start;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.toolbar-item {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+}
+
+#textArea {
+    width: 100%;  /* Adjust width as per your design requirement */
+    height: 80vh; /* Adjust height as per your design requirement */
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'Calibri', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;  /* Default font size, adjust as needed */
+    resize: both;  /* Disable resizing */
+    overflow: auto;  /* Adds a scrollbar if text overflows */
+    background-color: #fff; /* Ensures the background color is white */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); /* Optional: adds subtle inset shadow */
+}

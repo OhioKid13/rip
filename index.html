@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextPad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="toolbar">
+        <select id="fontSize" class="toolbar-item">
+            <option value="12px">12px</option>
+            <option value="14px">14px</option>
+            <option value="16px">16px</option>
+            <option value="18px">18px</option>
+            <option value="20px">20px</option>
+        </select>
+        <input type="text" id="fileName" class="toolbar-item" placeholder="File name" />
+        <input type="text" id="fileExtension" class="toolbar-item" placeholder="Enter file extension here" value=".txt"/>
+        <button onclick="saveText(true)" class="toolbar-item">Save As</button>
+        <button onclick="saveProgress()" class="toolbar-item">Save Progress</button>
+        <button onclick="openNewFile()" class="toolbar-item">New File</button>
+        <button onclick="document.getElementById('fileInput').click()" class="toolbar-item">Open File</button>
+        <input type="file" id="fileInput" style="display: none;" onchange="loadFile(this)">
+    </div>
+    <textarea id="textArea"></textarea>
+    
+    <script src="script.js"></script>
+</body>
+</html>
